@@ -1,4 +1,10 @@
-# api
+# Api_Rest_Framework_Call
+#CRUD_Property in Django
+1 GET 
+2 POST
+3 UPDATE
+4 DELEte
+
 Django Rest Framework in completed Update and Call 
 
 First Open 

@@ -1,4 +1,4 @@
-# Api_Rest_Framework_Call
+# Api_Rest_Framework_CRUD
 #CRUD_Property in Django
 1 GET 
 2 POST

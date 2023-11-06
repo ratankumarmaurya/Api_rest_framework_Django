@@ -1,9 +1,13 @@
 # Api_Rest_Framework_CRUD
 #CRUD_Property in Django
+
 1 GET 
+
 2 POST
+
 3 UPDATE
-4 DELEte
+
+4 DELETE
 
 Django Rest Framework in completed Update and Call 
 

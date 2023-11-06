@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show table</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: azure;
+        }
+        tr{
+            border: solid;
+            border-width: 1px 0;
+        }
+            table {
+
+             width: 50%;
+             border-collapse: collapse;
+         }
+
+          th, td {
+           border: 1px solid #333; /* Add borders on all sides */
+         padding: 8px;
+         text-align: center;
+ }
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border: 1px solid #333;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+<form>
+  <h2>Student information</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Address</th>
+            <th>RollNo</th>
+            <th>Mobile</th>
+        </tr>
+        </thead>
+
+         {% for emp in user.students %}
+        <tr>
+            <td>{{emp.id}}</td>
+            <td>{{emp.first_name}}</td>
+            <td>{{emp.last_name}}</td>
+            <td>{{emp.address}}</td>
+            <td>{{emp.roll_number}}</td>
+            <td>{{emp.mobile}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</form>
+
+</body>
+</html>
